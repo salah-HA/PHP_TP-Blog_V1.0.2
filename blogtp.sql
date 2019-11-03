@@ -83,7 +83,7 @@ CREATE TABLE `posts` (
 -- Déchargement des données de la table `posts`
 --
 
-INSERT INTO `posts` (`id`, `img_posting`, `title`, `author`, `content`, `idCategory`, `idUser`) VALUES
+INSERT INTO articles (`id`, `img_posting`, `title`, `author`, `content`, `idCategory`, `idUser`) VALUES
 (1, 'public/img/my-world.jpg', 'My World', 'admin', 'Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo)', 1, NULL ),
 (2, 'public/img/Inspi-d-ailleurs.jpg', 'Inspi d ailleurs', 'admin', 'Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo)', 1, NULL ),
 (3, 'public/img/La-Tete-dans-les-nuages.jpg', 'La Tete dans les nuages', 'admin', 'Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo) Jujujul (popopopo),Jujujul (popopopo)', 1, NULL ),
@@ -131,7 +131,7 @@ ALTER TABLE `comments`
 --
 -- Index pour la table `posts`
 --
-ALTER TABLE `posts`
+ALTER TABLE articles
     ADD PRIMARY KEY (`id`),
     ADD KEY `idCategory` (`idCategory`),
     ADD KEY `idUser` (`idUser`);
@@ -161,7 +161,7 @@ ALTER TABLE `comments`
 --
 -- AUTO_INCREMENT pour la table `posts`
 --
-ALTER TABLE `posts`
+ALTER TABLE articles
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
@@ -178,12 +178,12 @@ ALTER TABLE `users`
 -- Contraintes pour la table `comments`
 --
 ALTER TABLE `comments`
-    ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`);
+    ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES articles (`id`);
 
 --
 -- Contraintes pour la table `posts`
 --
-ALTER TABLE `posts`
+ALTER TABLE articles
     ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`idCategory`) REFERENCES `categories` (`id_cat`),
     ADD CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`);
 COMMIT;
