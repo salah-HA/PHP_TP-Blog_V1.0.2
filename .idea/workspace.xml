@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05493591-c83b-4a80-9a14-4f409de72613" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0d0b529f-0f15-414b-a31c-6be0875abf7d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0d0b529f-0f15-414b-a31c-6be0875abf7d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogtp.sql" beforeDir="false" afterPath="$PROJECT_DIR$/blogtp.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PostManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PostManager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,7 @@
       <updated>1572374132983</updated>
       <workItem from="1572374134302" duration="30788000" />
       <workItem from="1572716624997" duration="155000" />
-      <workItem from="1572730174697" duration="16133000" />
+      <workItem from="1572730174697" duration="16483000" />
     </task>
     <servers />
   </component>

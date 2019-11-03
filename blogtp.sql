@@ -66,10 +66,10 @@ INSERT INTO `comments` (`id`, `author`, `comment`, `post_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `posts`
+-- Structure de la table `articles`
 --
 
-CREATE TABLE `posts` (
+CREATE TABLE `articles` (
                          `id` int(11) NOT NULL,
                          `img_posting` varchar(255) DEFAULT NULL,
                          `title` varchar(255) NOT NULL,
