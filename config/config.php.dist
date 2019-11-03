@@ -1,0 +1,8 @@
+<?php
+
+const DATABASE_CONFIG = [
+    'host' => 'localhost',
+    'database' => 'blog',
+    'user' => 'root',
+    'password' => ''
+];

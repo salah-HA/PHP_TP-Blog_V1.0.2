@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=blogmag
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_HOST=mariadb
+    ports:
+      - "8085:80"
+    depends_on:
+    - mariadb
+
+  phpapp:
+    build: .
+    ports:
+      - "8081:80"
+    depends_on:
+    - mariadb
+    volumes:
+      - .:/var/www/html

@@ -1,0 +1,45 @@
+.body-post{
+    display: flex;
+    flex-direction: row;
+}
+section{
+   /* display: inline-block;*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+}
+aside{
+    top: 0;
+    /*display: inline-block;*/
+    width: 25%;
+    height: 90%;
+    text-align: center;
+}
+.containerArticle{
+    display: flex;
+    width: 95%;
+    height: 250px;
+    border-top: solid 2px darkgrey;
+    border-bottom: solid 2px darkgrey;
+}
+.content-image{
+    display: inline-block;
+    width: 29%;
+}
+.content-image img{
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.content-info{
+    display: inline-block;
+    width: 69%;
+}
+.content-info p{
+    width: 90%;
+    height: 40%;
+    overflow-x: hidden;
+    font-size: 90%;
+}
